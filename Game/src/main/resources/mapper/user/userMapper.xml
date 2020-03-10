@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="user">
+	<select id="loginChk" resultType="String">
+		<![CDATA[
+		select name from users
+		where userid=#{userid} and password=#{password}
+		]]>
+	</select>
+
+	<select id="getUser" resultType="userDTO">
+		<![CDATA[
+		select * from users where userid=#{userid}
+		]]>
+	</select>
+	
+	<insert id="create">
+		insert into users(userid,password,name,email) values(#{userid}, #{password}, #{name}, #{email})
+	</insert>
+</mapper>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration> <!-- 여러가지 기본 옵션을 지정합니다. -->
+	<typeAliases>
+		<typeAlias alias="boardDTO" type="com.example.game.model.Board.dto.BoardDTO" />
+		<typeAlias alias="userDTO" type="com.example.game.model.user.dto.UserDTO" />
+		<typeAlias alias="replyDTO" type="com.example.game.model.reply.dto.ReplyDTO"/>
+	</typeAliases>
+</configuration>
+
