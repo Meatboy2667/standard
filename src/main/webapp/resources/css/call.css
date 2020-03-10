@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+a {text-decoration:none;}
+#wrap {width:450px; height:120px; border:1px solid red; margin:40% auto 0;}
+#wrap div {float:left;}
+.cal {width:150px; height:100%;}
+.board {width:150px; height:100%; background:url("/resources/images/board.png") no-repeat center 10px;}
+.feedback {width:150px; height:100%;}
+
+.board a {display:block; font:bold 13px/30px NanumGothic; color:white; text-align:center; padding-top:90px;}
+
+ 
