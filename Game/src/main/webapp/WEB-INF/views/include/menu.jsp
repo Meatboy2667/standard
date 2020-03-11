@@ -18,7 +18,7 @@
 		</c:if>
 	</div>
 	<h1 id="logo">
-		<a href="${path}/">P.GP</a>
+		<a href="${path}/">P.Gp</a>
 	</h1>
 	<div id="header">
 		<div class="menu">

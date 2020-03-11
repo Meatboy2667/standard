@@ -4,22 +4,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>P.G.P</title>
+<title>P.Gp</title>
 <link rel="stylesheet" href="${path}/resources/css/main.css"/>
 </head>
 <body>
 <%@ include file="include/menu.jsp" %>
 	<div id="main">
 		<div class="nav">
-			navigation~
+			<ul>
+				<li><a href="#" onclick="sendAjax('main/ajaxView1')">왜 P.Gp인가?</a></li>				
+				<li><button type="button" class="btn btn-warning" onclick="sendAjax('main/ajaxView2')">ajax2</button></li>
+			</ul>
 		</div>
 		<div class="content">
-			<c:if test="${sessionScope.userid != null}" >
-				<h2>${sessionScope.userid}님의 방문을 환영합니다.</h2>
-			</c:if>
-			content Area!
+			<div id="changeView"></div>
 		</div>
 	</div>
+<script type="text/javascript" src="${path}/resources/js/ajax.js"></script>
 <%@ include file="include/footer.jsp" %>
 </body>
 </html>

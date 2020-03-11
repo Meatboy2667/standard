@@ -70,13 +70,13 @@ public class MainController {
 	@RequestMapping(value="ajaxView1", method=RequestMethod.POST)
 	public String view1(Locale locale) {
 		logger.info("ajaxView1", locale);
-		return "view1";
+		return "main/view1";
 	}
 	
 	@RequestMapping(value="ajaxView2", method=RequestMethod.POST)
 	public String view2(Locale locale) {
 		logger.info("ajaxView2", locale);
-		return "view2";
+		return "main/view2";
 	}
 	
 }
